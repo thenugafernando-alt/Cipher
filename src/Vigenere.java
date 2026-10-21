@@ -1,9 +1,10 @@
+import java.util.Scanner;
 
 public class Vigenere {
 
 	public static void main(String[] args) {
 		// TODO Auto-generated method stub
-
+		Scanner in = new Scanner(System.in);
 		//Read in message
 		
 		//Read in shift word
