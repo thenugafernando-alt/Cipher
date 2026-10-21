@@ -19,6 +19,29 @@ public class Box {
 		//break the String into columns
 		//Rewrite the message by reading the columns vertically
 		//Print out the message
+		int count = 0;
+		String output = "";
+		// Loop through message
+		int lenth = msg.length();
+		int width = Math.ceilDiv(lenth,col);
+		for (int x = 0; x < msg.length(); x++) {
+			char letter = msg.charAt(x);
+	       
+			
+			width =  count ++;
+			
+			
+	
+				
+				
+			}
+				
+				
+				
+			
+	
+	System.out.println(width);
 	}
-
+	
+	
 }
