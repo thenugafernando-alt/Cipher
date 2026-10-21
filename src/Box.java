@@ -28,17 +28,14 @@ public class Box {
 			char letter = msg.charAt(x);
 	       
 			
-			width =  count ++;
+		  count++;
 			
 			
 	
-				
+			
 				
 			}
 				
-				
-				
-			
 	
 	System.out.println(width);
 	}
