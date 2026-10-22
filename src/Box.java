@@ -24,21 +24,32 @@ public class Box {
 		// Loop through message
 		int lenth = msg.length();
 		int width = Math.ceilDiv(lenth,col);
+		
+		
 		for (int x = 0; x < msg.length(); x++) {
 			char letter = msg.charAt(x);
-	       
 			
-		  count++;
-			
-			
-	
-			
+			if (Character.isAlphabetic(letter)) {
+				 
+				 col +=(char) letter;
+				
+				System.out.println(col);	
+		        
+				while (col > lenth) {
+				
+				char next = (char)( letter/col);
+				next += letter;
+				System.out.println();	
+				}
 				
 			}
-				
 	
-	System.out.println(width);
+			}
+		//System.out.println();	
 	}
-	
-	
 }
+
+
+
+
+
