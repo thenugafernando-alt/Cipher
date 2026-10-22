@@ -31,21 +31,21 @@ public class Box {
 			
 			if (Character.isAlphabetic(letter)) {
 				 
-				 col +=(char) letter;
+				col +=(char) letter;
 				
 				System.out.println(col);	
 		        
 				while (col > lenth) {
 				
 				char next = (char)( letter/col);
-				next += letter;
-				System.out.println();	
+				 next += (char)letter;
+				 output += next;
 				}
 				
 			}
 	
 			}
-		//System.out.println();	
+		System.out.println(output);	
 	}
 }
 
