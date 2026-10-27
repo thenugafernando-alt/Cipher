@@ -27,7 +27,7 @@ public class Box {
 		
 		
 		for (int x = 0; x < col; x++) {
-			for(int y = x; y <lenth; y+= col)	{
+			for(int y = x; y <lenth; y+= col){
 				
 				output += msg.charAt(y);
 			}
