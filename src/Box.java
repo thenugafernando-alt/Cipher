@@ -23,32 +23,20 @@ public class Box {
 		String output = "";
 		// Loop through message
 		int lenth = msg.length();
-		int width = Math.ceilDiv(lenth,col);
+		int loops = Math.ceilDiv(lenth,col);
 		
 		
-		for (int x = 0; x < msg.length(); x++) {
-			char letter = msg.charAt(x);
+		for (int x = 0; x < col; x++) {
+			for(int y = x; y <lenth; y+= col)	{
+				
+				output += msg.charAt(y);
+			}
 			
-			if (Character.isAlphabetic(letter)) {
-				 
-				col +=(char) letter;
-				
-				System.out.println(col);	
-		        
-				while (col > lenth) {
-				
-				char next = (char)( letter/col);
-				 next += (char)letter;
-				 output += next;
-				}
-				
-			}
-	
-			}
-		System.out.println(output);	
+			
+		}
+		System.out.println(output);
 	}
 }
-
 
 
 
