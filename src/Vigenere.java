@@ -17,7 +17,33 @@ public class Vigenere {
 					//subtract 26
 			//add letter to output
 		
-		//print output
-	}
+	
+		System.out.println("What's your massage");
+		String msg1 = in.nextLine();
+	
 
+		System.out.println("What's the shift word?");
+		String str1 = in.nextLine();
+
+		
+		String output = "";
+	
+		for (int x = 0; x < msg1.length(); x++) {
+			char letter = msg1.charAt(x);
+				// apply shift
+			
+				int shift = (int)(letter + str1);
+				
+				
+				
+
+				output += str1;
+
+				
+			
+
+		}
+		System.out.println("Decode : " + msg1);
+		System.out.println("Encode : " + output);
+	}
 }
